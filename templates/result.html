@@ -1,0 +1,14 @@
+{% extends "index.html" %} {% block content %}
+
+  <div class="container p-1">
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">{{ city }}</h5>
+        <h5 class="lead text-muted">Temperature: {{ temp }} F</h5>
+        <h5 class="lead text-muted">Humidity:{{ humidity }}%</h5>
+        <h5 class="lead text-muted">Wind Speed: {{ wind_speed }} mph</h5>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
